@@ -1,10 +1,10 @@
 const Koa= require ('koa');
 const app = new Koa();
 
-// const mainRouter = require('./lib/routes/socialmedia-routes');
+const router = require('./lib/routes/socialmedia-router');
 
-// app.use(router.routes());
+app.use(router.routes());
 
-app.listen (3000, () => {
-console.log('Server running at http://localhost:3000');
+app.listen (3001, () => {
+console.log('Server running at http://localhost:3001');
 });
